@@ -68,8 +68,7 @@ def rho(cp, k, t, r, d2):
 
 def theta(cp, s, k, t, v, r, q):
     f = s * math.exp((r - q) * t)
-    
-    d1 = (math.log(f / k) + (0.5 * (v ** 2)) * t) / (v * math.sqrt(t))
+    d1 = (math.log(f / k) + ((v ** 2) / 2) * t) / (v * math.sqrt(t))
     d2 = d1 - v * math.sqrt(t)
     lhs = -(s * sdf(d1) * v) / (2 * math.sqrt(t))
     rhs = r * k * math.exp(-r * t) * cdf(cp * d2)
