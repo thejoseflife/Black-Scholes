@@ -1,2 +1,2 @@
 # Black-Scholes
- A Black-Scholes pricing calculator for European options.
+ A dividend-modified Black-Scholes pricing calculator for European options.
